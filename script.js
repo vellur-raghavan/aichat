@@ -2,7 +2,7 @@ const promptInput = document.getElementById("promptInput");
 const sendButton = document.getElementById("sendButton");
 const messagesContainer = document.getElementById("messages");
 
-const OPENROUTER_API_KEY = "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"; 
+const OPENROUTER_API_KEY = "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"; 
 const YOUR_SITE_URL = "https://vellur-raghavan.github.io/aichat/"; 
 
 function addMessage(role, content) {
@@ -31,7 +31,7 @@ async function sendMessage() {
                 "X-Title": "My OpenRouter Chat App", 
             },
             body: JSON.stringify({
-                model: "mistralai/mistral-small-3.2-24b-instruct:free", 
+                model: "mistralai/mistral-small-3.2-24b-instruct", 
                 messages: [{ role: "user", content: prompt }],
             }),
         });
