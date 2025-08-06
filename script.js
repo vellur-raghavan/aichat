@@ -31,7 +31,7 @@ async function sendMessage() {
                 "X-Title": "My OpenRouter Chat App", 
             },
             body: JSON.stringify({
-                model: "openai/gpt-3.5-turbo", 
+                model: "mistralai/mistral-small-3.2-24b-instruct:free", 
                 messages: [{ role: "user", content: prompt }],
             }),
         });
