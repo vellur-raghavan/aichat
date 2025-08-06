@@ -3,7 +3,7 @@ const sendButton = document.getElementById("sendButton");
 const messagesContainer = document.getElementById("messages");
 
 const OPENROUTER_API_KEY = "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"; 
-const YOUR_SITE_URL = "https://github.com/vellur-raghavan/aichat/"; 
+const YOUR_SITE_URL = "https://vellur-raghavan.github.io/aichat/"; 
 
 function addMessage(role, content) {
     const messageDiv = document.createElement("div");
